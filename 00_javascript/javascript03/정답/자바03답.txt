@@ -1,0 +1,17 @@
+﻿1부터 10까지의 합을 FOR문으로 나타내기 해답
+
+<script language="javascript">
+<!--
+    total=0
+    for(x=1 ; x<=10 ; x++)
+
+    {
+        total=total+x
+        document.write(x)
+
+        if(x!=10)document.write("+")
+    }
+
+    document.write("="+ total)
+//-->
+</script>

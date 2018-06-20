@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>나의 하루</title>
+	<SCRIPT language="JavaScript">
+		<!--
+		function mystatus(){ 
+			var current= new Date()
+			var day_time=current.getHours()
+			if (day_time <= 6)
+				nowimg.src = "images/sleep.gif";
+			else if(day_time <= 8)
+				nowimg.src = "images/wakeup.gif";
+			else if(day_time <= 18)
+				nowimg.src = "images/work.gif";
+			else if(day_time <= 23)
+				nowimg.src = "images/study.gif";
+			else 
+				nowimg.src = "images/sleep.gif";
+			
+			setTimeout("mystatus()",1000);
+		}
+		
+		function start_clock() 
+		{
+			var now = new Date();
+			var hours = now.getHours();
+			var minutes = now.getMinutes();
+				var date = now.getDate();
+			if(minutes < 10)
+				minutes = "0" + minutes;
+			if(date < 10)
+				date = "0" + date;
+			if(hours < 12)
+				minutes = minutes + " A.M ";
+			else if(hours >= 12)
+				minutes = minutes + " P.M "
+			if(hours == 0)
+				hours = hours + 12; 
+			else if(hours > 12)
+				hours = hours - 12;
+			
+			var time = hours + ":" + minutes;  
+			document.time_form.clock.value = time;
+			setTimeout("start_clock()", 1000);
+		}
+		//-->
+	</SCRIPT>
+</head>
+<body onload="mystatus(), start_clock()">
+	<center>
+		<h1>지금 나는</h1>
+		<form name = "time_form">
+			<input name = "clock" size = "8" value = "   TIME  ">
+		</form>
+		<p><img name="nowimg" src="images/map.gif" border="0"></p>
+	</center>
+</body>
+</html>

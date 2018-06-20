@@ -1,0 +1,4 @@
+﻿jQuery(document).ready(function(){
+	$('#div1').slideDown();
+	$('#div2').slideUp();
+});

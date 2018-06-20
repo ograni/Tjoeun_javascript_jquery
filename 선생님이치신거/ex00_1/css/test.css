@@ -1,0 +1,5 @@
+﻿#header{width: 700px; height: 400px; background: yellow; margin: 0 auto; font-family: '맑은 고딕', Arial, 'Times New Roman','돋움체', Dotum, sans-serif;}
+.box1{width: 100px; height: 100px; background: red;}
+.box2{width: 100px; height: 100px; background: green; margin-bottom: 50px;}
+#header .box3{width: 100px; height: 100px; background: blue; margin-top: 100px;}
+

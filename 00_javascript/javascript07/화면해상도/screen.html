@@ -1,0 +1,20 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>화면 해상도에 따라 브라우져 실행하기</title>
+	<script>
+		function screenSize(){
+			scr = screen.width
+			if(scr <= 1280){
+				window.resizeTo(320,568)
+			}else {
+				window.resizeTo(1600,900)
+			}
+		}
+	</script>
+</head>
+<body style="background: url(back4.jpg)" onload="screenSize()">
+	
+</body>
+</html>
