@@ -8,10 +8,15 @@ $(function(){
         allDd.eq(0).show();
         allDt.css('cursor','pointer');
         allDt.eq(0).css('cursor','default');
+        //자 세팅은 끝났고
+        //이제 진짜 동작
         allDt.click(function(){
+            var dt = $(this);
+            var dd = dt.next();
             allDd.hide();
-            $(this).show();
-            // $(this).show(allDd);
+            dd.show();
+            allDt.css('cursor','pointer');
+            dt.css('cursor','default');
         });
     });
 });
