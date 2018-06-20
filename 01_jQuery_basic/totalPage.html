@@ -7,35 +7,58 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <style>
-    *{font-size: 13px; font-family: 'Noto Sans', sans-serif;}
+    *{font-size: 13px; font-family: 'Noto Sans', sans-serif; margin: 0;}
     li{padding: 10px 0;}
     a:link, a:visited, a:hover, a:active {color:#333; text-decoration: none }
-    p{background: rgb(240, 164, 116); font-size: 14px; font-weight: bold; padding: 10px; color: ss}
-    div{border: 1px solid #ccc;}
+    section{width:100%; display: flex; flex-wrap: wrap;}
+    article{margin: 5px;  vertical-align: top;  width:32%; flex-flow: }
+    div{border: 1px solid #ccc; margin-top: 3px; padding-right: 15px;}
+    p{background: rgb(240, 164, 116); font-size: 14px; font-weight: bold; padding: 15px; }
+
     </style>
 
 </head>
 <body>
     <section>
-        <p>ex00_1 - 셀렉터와 선택자</p>
-        <div>
-            <ol>
-                <li><a href="ex00_1\01_아이디로_엘리먼트찾기.html" target="_blank">id로 특정 엘리먼트 색 변경하기</a></li>
-                <li><a href="ex00_1\02_클래스로_엘리먼트찾기.html" target="_blank">class로 특정 엘리먼트 색 변경하기</a></li>
-                <li><a href="ex00_1\03_자식_엘리먼트찾기.html" target="_blank">자식 선택자로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\04_형제_엘리먼트찾기.html" target="_blank">인접 형제 선택자로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\05_속성으로_엘리먼트찾기.html" target="_blank">속성 선택자로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\06_first_필터셀렉터.html" target="_blank">[필터셀렉터] first로 css 속성 변경하기 </a></li>
-                <li><a href="ex00_1\07_last_필터셀렉터.html" target="_blank">[필터셀렉터] last로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\08_even_필터셀렉터.html" target="_blank">[필터셀렉터] even로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\09_odd_필터셀렉터.html" target="_blank">[필터셀렉터] odd로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\10_eq_필터셀렉터.html" target="_blank">[필터셀렉터] eq로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\11_gt_필터셀렉터.html" target="_blank">[필터셀렉터] gt로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\12_lt_필터셀렉터.html" target="_blank">[필터셀렉터] lt로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\13_has_필터셀렉터.html" target="_blank">[필터셀렉터] has로 css 속성 변경하기</a></li>
-                <li><a href="ex00_1\14_not_필터셀렉터.html" target="_blank">[필터셀렉터] not로 css 속성 변경하기</a></li>
-            </ol>
-        </div>
+        <article>
+            <p>ex00_1 - 셀렉터와 선택자</p>
+            <div>
+                <ol>
+                    <li><a href="ex00_1\01_아이디로_엘리먼트찾기.html" target="_blank">id로 특정 엘리먼트 색 변경</a></li>
+                    <li><a href="ex00_1\02_클래스로_엘리먼트찾기.html" target="_blank">class로 특정 엘리먼트 색 변경</a></li>
+                    <li><a href="ex00_1\03_자식_엘리먼트찾기.html" target="_blank">자식 선택자로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\04_형제_엘리먼트찾기.html" target="_blank">인접 형제 선택자로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\05_속성으로_엘리먼트찾기.html" target="_blank">속성 선택자로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\06_first_필터셀렉터.html" target="_blank">[필터셀렉터] first로 css 속성 변경 </a></li>
+                    <li><a href="ex00_1\07_last_필터셀렉터.html" target="_blank">[필터셀렉터] last로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\08_even_필터셀렉터.html" target="_blank">[필터셀렉터] even로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\09_odd_필터셀렉터.html" target="_blank">[필터셀렉터] odd로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\10_eq_필터셀렉터.html" target="_blank">[필터셀렉터] eq로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\11_gt_필터셀렉터.html" target="_blank">[필터셀렉터] gt로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\12_lt_필터셀렉터.html" target="_blank">[필터셀렉터] lt로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\13_has_필터셀렉터.html" target="_blank">[필터셀렉터] has로 css 속성 변경</a></li>
+                    <li><a href="ex00_1\14_not_필터셀렉터.html" target="_blank">[필터셀렉터] not로 css 속성 변경</a></li>
+                </ol>
+            </div>
+        </article>
+        <article>
+            <p>ex00_2 - jQuery 메소드</p>
+            <div>
+                <ol>
+                    <li><a href="ex00_2\01_size_메소드.html" target="_blank">size() - 갯수 세어보기</a></li>
+                    <li><a href="ex00_2\02_eq_메소드.html" target="_blank">eq() - css 속성 변경</a></li>
+                    <li><a href="ex00_2\03_first_and_last_메소드.html" target="_blank">first(), last() - css 속성 변경</a></li>
+                    <li><a href="ex00_2\04_index_메소드.html" target="_blank">index() - 순서 알아보기</a></li>
+                    <li><a href="ex00_2\05_not_메소드.html" target="_blank">not() - 특정 엘리먼트 제외 css 속성 변경</a></li>
+                    <li><a href="ex00_2\06_filter_메소드.html" target="_blank">filter() - 특정 엘리먼트 css 속성 변경</a></li>
+                    <li><a href="ex00_2\07_slice_메소드.html" target="_blank">slice() - 지정된 범위 內 css 속성 변경</a></li>
+                    <li><a href="ex00_2\08_has_메소드.html" target="_blank">has() - 특정 엘리먼트를 지니고 있는 엘리먼트의 css 속성을 변경</a></li>
+                    <li><a href="ex00_2\09_each_메소드.html" target="_blank"></a></li>
+                </ol>
+            </div>
+        </article>
+
     </section>
+
 </body>
 </html>
