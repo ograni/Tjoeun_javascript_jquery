@@ -2,7 +2,8 @@ $(function(){
     $('.guideText').each(function(){
         var guideText = this.defaultValue;
         //this == jquery 객체가 아닌 순환하는 .guideText
-        //guideText="이름을 입력"
+        //defaultValue는 기본 value값 == 초기 상태
+        //guideText="이름을 입력해주세요"
         var element = $(this);
         element.focus(function(){
             if(element.val()===guideText){
