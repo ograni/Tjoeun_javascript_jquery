@@ -1,0 +1,6 @@
+*{font-family: sans-serif;}
+body{padding: 30px;}
+form{padding: 0 0 10px;}
+
+.guide{color: #999999;}
+textarea{display: block; width: 300px; margin: 5px 0 5px;}
