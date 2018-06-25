@@ -12,9 +12,14 @@
 			li { margin:5px; list-style: none; border: 1px solid green; }
 		</style>
 		<script>
-			$(document).ready(function(){
-				var el = $('#wrapper #el').css('background','pink');
-				el.find('#nextEl').css('background','blue');
+			// $(document).ready(function(){
+			// 	var el = $('#wrapper #el').css('background','pink');
+			// 	el.find('#nextEl').css('background','blue');
+			// });
+			$(function(){
+				var testVar = $('#wrapper').find('#el');
+				testVar.css('background','yellow');
+				testVar.find('#nextEl').css('background','red');
 			});
 		</script>
 	</head>

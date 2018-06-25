@@ -12,13 +12,20 @@
 			li { margin:5px; list-style: none; border: 1px solid green; }
 		</style>
 		<script>
-			$(document).ready(function(){
-				var el = $('#el > ul > li').is('#nextEl');
-				if (el){
-					alert('ok');
-				}else{
-					alert('no');
-				}
+			// $(document).ready(function(){
+			// 	var el = $('#el > ul > li').is('#nextEl');
+			// 	if (el){
+			// 		alert('ok');
+			// 	}else{
+			// 		alert('no');
+			// 	}
+			// });
+			$(function(){
+				var testVar = $('#wrapper #el li');
+				if(testVar.is('#nextEl')){
+					alert('nextEl is ok');
+				};
+
 			});
 		</script>
 	</head>

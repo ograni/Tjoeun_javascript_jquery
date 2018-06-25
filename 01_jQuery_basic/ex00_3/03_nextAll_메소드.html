@@ -12,9 +12,13 @@
 			#wrapper > ul > li { margin:5px; list-style: none; border: 1px solid green; }
 		</style>
 		<script>
-			$(document).ready(function(){
-				var el = $('#wrapper > ul > .first').nextAll()
-				el.css('background', 'red')
+			// $(document).ready(function(){
+			// 	var el = $('#wrapper > ul > .first').nextAll()
+			// 	el.css('background', 'red')
+			// });
+			$(function(){
+				var testVar = $('#wrapper li.first').nextAll();
+				testVar.css('background','pink');
 			});
 		</script>
 	</head>

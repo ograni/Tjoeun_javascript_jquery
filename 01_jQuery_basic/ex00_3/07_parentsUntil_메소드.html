@@ -12,8 +12,13 @@
 			li { margin:5px; list-style: none; border: 1px solid green; }
 		</style>
 		<script>
-			$(document).ready(function(){
-				$('#wrapper #childEl').parentsUntil('#wrapper #parentEl').css('background','blue')
+			// $(document).ready(function(){
+			// 	$('#wrapper #childEl').parentsUntil('#wrapper #parentEl').css('background','blue')
+			// });
+			$(function(){
+				var testVar = $('#childEl').parentsUntil('#parentEl');
+				testVar.css('background','pink')
+
 			});
 		</script>
 	</head>

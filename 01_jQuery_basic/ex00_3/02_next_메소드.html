@@ -8,14 +8,19 @@
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 		<style>
 			html * { margin:0; padding:0; }
-			body span { color:red; font-size: 30px; }
+			body span { color:red; font-size: 20px; }
 			#wrapper > ul > li { margin:5px; list-style: none; border: 1px solid green; }
 		</style>
 		<script>
-			$(document).ready(function(){
-				var el = $('#wrapper > ul > .first').next()
-				el.css('background', 'red')
+			// $(document).ready(function(){
+			// 	var el = $('#wrapper > ul > .first').next()
+			// 	el.css('background', 'red')
+			// });
+			$(function(){
+				var testVar = $('#wrapper li.first').next();
+				testVar.css('background','red');
 			});
+
 		</script>
 	</head>
 

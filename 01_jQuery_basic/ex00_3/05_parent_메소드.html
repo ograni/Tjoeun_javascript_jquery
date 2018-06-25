@@ -13,11 +13,12 @@
 		</style>
 		<script>
 			$(document).ready(function(){
-				
+				var testVar = $('#childEl').parent('#parentEl');
+				testVar.css('background','pink')
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<span>parent() 메서드를 사용하여 id가 "childEl"인 엘리먼트의 부모 엘리먼트인 태그네임이 "ul"인 엘리먼트를 찾아 색을 바꿔 주세요.</span>
 		<div id="wrapper">
@@ -38,4 +39,3 @@
 			</ul>
 		</div> 	</body>
 </html>
-

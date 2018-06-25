@@ -8,16 +8,17 @@
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 		<style>
 			html * { margin:0; padding:0; }
-			body span { color:red; font-size: 30px; }
+			body span { color:red; font-size: 20px; }
 			#wrapper > ul > li { margin:5px; list-style: none; border: 1px solid green; }
 		</style>
 		<script>
 			$(document).ready(function(){
-				
+				var testVar = $('#wrapper .first').nextUntil('.end');
+				testVar.css('background','pink')
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<span>nextUntil() 메서드를 사용하여 1번의 형제 엘리먼트중 5번전까지의 형제 엘리먼트 모두에 컬러를 바꿔주세요.</span>
 		<div id="wrapper">

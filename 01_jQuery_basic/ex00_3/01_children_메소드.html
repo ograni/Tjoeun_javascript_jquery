@@ -12,9 +12,15 @@
 			#wrapper > ul > li { margin:5px; list-style: none; border: 1px solid green; }
 		</style>
 		<script>
-			$(document).ready(function(){
-				var el = $('#wrapper > ul').children()
-				el.css('background', 'red')
+			// $(document).ready(function(){
+			// 	var el = $('#wrapper > ul').children()
+			// 	el.css('background', 'red')
+			// });
+
+			$(function(){
+				$('#wrapper li').css("background-color","blue")
+				var testVar = $('#wrapper > ul').children();
+				testVar.css('color','white')
 			});
 		</script>
 	</head>
