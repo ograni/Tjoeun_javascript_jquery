@@ -3,6 +3,17 @@ $(function(){
     function updateBalloonPosition(x, y){
         balloon.css({left:x+15, top:y});
     }
+    //함수를 나눔
+    function showBalloon(){
+        balloon.stop();
+        balloon.css('opacity',0).show();
+        balloon.animate({opacity:1},2000);
+    }
+    function hideBalloon(){
+        balloon.stop();
+        balloon.animate({opacity:0},2000,function(){balloon.hide()});
+        //hide가 animate위에 나타나면 hide가 순간적으로 먼저 실행되기에 맨 마지막에 위치함.
+    }
     $('.showBalloon').each(function(){
         var element = $(this);
         var text = element.attr('title');
@@ -12,10 +23,10 @@ $(function(){
                 //mouse의 x, y 값을 받기 위해 event를 사용. 왜? 따라다닐라고.
                 balloon.text(text);
                 updateBalloonPosition(event.pageX, event.pageY);
-                balloon.show();
+                showBalloon();
             },
             function(){
-                balloon.hide();
+                hideBalloon();
             }
         );
         element.mousemove(function(event){
