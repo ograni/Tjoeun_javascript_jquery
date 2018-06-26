@@ -1,6 +1,6 @@
 $(function(){
     $('.tabSet').each(function(){
-        //each문 안에 돌아가는 녀석을 this로 잡아주고.
+        //each문 안에 돌아가는 녀석을 this로 잡고  topDiv로 넣어주고
         var topDiv = $(this);
 
         //그녀석의 탭을 한놈 골라주고
@@ -30,8 +30,8 @@ $(function(){
         anchors.click(function(e){
             e.preventDefault(); //하이퍼링크 증상이 없어짐
             //return false; 와 같음
-            var currentAnchor = $(this); //지금 클릭한 A 태그를 담고
-            var currentPanel = $(currentAnchor.attr('href')); // 크릭할때 가지고 있는 href 값
+            var currentAnchor = $(this);
+            var currentPanel = $(currentAnchor.attr('href'));
             lastAnchor.removeClass('on');
             currentAnchor.addClass('on');
             lastPanel.hide();
