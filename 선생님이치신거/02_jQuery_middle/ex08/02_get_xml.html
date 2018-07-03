@@ -13,7 +13,7 @@
 		<script>
 			$.get('data/data.xml',function(data){
 				var fruits = $(data).find('>data>fruits');
-				var table = $('#fruits_data')
+				var table = $('#fruits_data');
 				fruits.each(function(i){
 					var fruit = $(this);
 					fruit.children().each(function(j){
@@ -22,20 +22,13 @@
 						var td = tr.find('>td').eq(j+1);
 						td.text(text);
 					});
-				})
-			},'xml') ;
-			//데이터 형식이 xml이야
-			//$용법
-			//도큐먼트를 다 읽고 실행해라
-			//제이쿼리 객채 만들어라
-			//동적생성 안에다가 html를 생성
-			//get, json 데이터 불러오는
-			//plugin .fn 만들때
+				});
+			},'xml');
 		</script>
 	</head>
 	<body>
 		<div id="wrapper">
-			<h2>각 영역에 맞는 값을 추가시켜 주세요.ㅇ</h2>
+			<h2>각 영역에 맞는 값을 추가시켜 주세요.</h2>
 			<table id="fruits_data" border="1" cellpadding="10" cellspacing="0">
 				<tbody>
 					<tr class="head">
