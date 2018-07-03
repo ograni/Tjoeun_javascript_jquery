@@ -13,11 +13,13 @@
 		</style>
 		<script>
 			$(document).ready(function(){
-				
+				// var el = $('#wrapper > ul > li').eq(2);
+				// el.css('background','red');
+				$('#wrapper li').eq(2).css('background','yellow')
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<span>eq() 메서드로 ul의 자식 엘리먼트중 세번째 엘리먼트의 색을 바꿔주세요.</span>
 		<div id="wrapper">
