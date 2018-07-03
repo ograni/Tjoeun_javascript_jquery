@@ -10,7 +10,7 @@
     menu.on({
         mouseover:function(){
             var tg = $(this);
-            tg.removeClass('on');
+            menu.removeClass('on');
             tg.addClass('on');
             var th = menuHeight + tg.find('>.sGnbArea').height();
             //th = 1뎁스 높이 + 2뎁스 높이
@@ -27,7 +27,7 @@
 
     menu.each(function(i){
         var tg = $(this); //원뎁스 li
-        var sub = tg.find('>sGnbArea > ul > li'); //투뎁스 서브메뉴 li
+        var sub = tg.find('>.sGnbArea > ul > li'); //투뎁스 서브메뉴 li
         var menuURL = tg.children('a').attr('href');
         // menuURL = 1뎁스의 href 값
         var active = pageURL.indexOf(menuURL);
@@ -38,7 +38,7 @@
         sub.each(function(j){
             var tg = $(this); //순환하는 투뎁스
             var subURL = tg.children('a').attr('href');
-            ative = pageURL.indexOf(subURL);
+            active = pageURL.indexOf(subURL);
             if(active > -1 ) activeMenu = tg;
         });
         sub.on({
