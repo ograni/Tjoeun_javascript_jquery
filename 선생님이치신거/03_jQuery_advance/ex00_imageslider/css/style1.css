@@ -1,0 +1,21 @@
+*{margin: 0; padding: 0;}
+.animation_canvas{/* overflow: hidden; */ width: 600px; height: 400px; position: relative;}
+
+/* sliderPanel */
+.slider_panel{width: 1800px; position: relative;}
+.slider_image{float: left; width: 600px; height: 400px;}
+
+/* slider Text Panel */
+.slider_text_panel{position: absolute; top: 140px; left: 50px;}
+.slider_text{position: absolute; width: 250px; height: 150px; color: #ffffff;}
+
+/* Control Panel */
+.control_panel{position: absolute; bottom: 30px; left: 50%; height: 30px; width: 45px; overflow: hidden; margin-left: -22px;}
+.control_button{width: 15px; height: 15px; position: relative; float: left; cursor: pointer; background: url('../images/point_button.png'); }
+.control_button:hover{background: url(../images/point_button.png) no-repeat 0 -16px;}
+.control_button.active{background: url(../images/point_button.png) no-repeat 0 -31px;}
+
+
+
+
+

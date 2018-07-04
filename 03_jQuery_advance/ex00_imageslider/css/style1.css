@@ -2,12 +2,12 @@
 .animation_canvas{/*overflow: hidden*/; width: 600px; height: 400px; position: relative;}
 
 /* slider_panel */
-.slider_panel{width: 3000px; position: relative;}
+.slider_panel{width: 3600px; position: relative;}
 .slider_image{float: left; width: 600px; height: 400px;}
 
 /* slider_text_panel */
 .slider_text_panel{position: absolute; top: 140px;left: 50px;}
-.slider_text{position: absolute; width: 250px; height: 150px;}
+.slider_text{position: absolute; width: 250px; height: 150px; background: rgb(255,255,255,.3); padding: 25px 35px}
 
 /* control_panel */
 .control_panel{position: absolute; bottom:30px; left: 50%; height: 15px; overflow: hidden; margin-left: -37.5px;}

@@ -5,6 +5,8 @@ $(function(){
         $('.slider_panel').animate({left:willMoveLeft},500);
         $('.control_button[data-index='+index+']').addClass('active');
         $('.control_button[data-index!='+index+']').removeClass('active');
+        $('.slider_text[data-index='+index+']').show().animate({left:0},500);
+        $('.slider_text[data-index!='+index+']').hide(500,function(){$(this).css('left',-300)});
     }
 
     $('.slider_text').css('left',-300).each(function(index){
@@ -16,4 +18,6 @@ $(function(){
         var index = $(this).attr('data-index'); //클릭하면 무브슬라이드에 넣을 값
         moveSlider(index);
     });
+    var randomNumber = Math.round(Math.random()*5);
+     moveSlider(randomNumber);
 });
