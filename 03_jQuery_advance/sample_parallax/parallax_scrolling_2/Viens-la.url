@@ -1,0 +1,16 @@
+[DEFAULT]
+BASEURL=http://viens-la.com/
+[DOC_fb_xdm_frame_http]
+BASEURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f32789f56bb5ab&origin=http%3A%2F%2Fviens-la.com
+[DOC_fb_xdm_frame_https]
+BASEURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f32789f56bb5ab&origin=http%3A%2F%2Fviens-la.com
+[DOC#80]
+BASEURL=https://www.facebook.com/plugins/like.php?app_id=337269369673091&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKFZn1BJ0LYk.js%3Fversion%3D41%23cb%3Df3c2c8c208fb48c%26domain%3Dviens-la.com%26origin%3Dhttp%253A%252F%252Fviens-la.com%252Ff32789f56bb5ab%26relation%3Dparent.parent&font=segoe+ui&href=https%3A%2F%2Fwww.facebook.com%2Fviensla&layout=button_count&locale=fr_FR&sdk=joey&send=false&show_faces=false&width=200
+ORIGURL=http://www.facebook.com/plugins/like.php?app_id=337269369673091&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKFZn1BJ0LYk.js%3Fversion%3D41%23cb%3Df3c2c8c208fb48c%26domain%3Dviens-la.com%26origin%3Dhttp%253A%252F%252Fviens-la.com%252Ff32789f56bb5ab%26relation%3Dparent.parent&font=segoe%20ui&href=https%3A%2F%2Fwww.facebook.com%2Fviensla&layout=button_count&locale=fr_FR&sdk=joey&send=false&show_faces=false&width=200
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://viens-la.com/
+IDList=

@@ -1,0 +1,16 @@
+[DEFAULT]
+BASEURL=http://www.spendeeapp.com/
+[DOC_fb_xdm_frame_http]
+BASEURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f1b5d16f71e0c9&origin=http%3A%2F%2Fwww.spendeeapp.com
+[DOC_fb_xdm_frame_https]
+BASEURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f1b5d16f71e0c9&origin=http%3A%2F%2Fwww.spendeeapp.com
+[DOC#148]
+BASEURL=https://www.facebook.com/plugins/like.php?app_id=162328350587447&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKFZn1BJ0LYk.js%3Fversion%3D41%23cb%3Df1b061bd3a48f7%26domain%3Dwww.spendeeapp.com%26origin%3Dhttp%253A%252F%252Fwww.spendeeapp.com%252Ff1b5d16f71e0c9%26relation%3Dparent.parent&href=https%3A%2F%2Fwww.facebook.com%2Fspendeeapp&layout=button_count&locale=cs_CZ&sdk=joey&send=false&show_faces=true&width=130
+ORIGURL=http://www.facebook.com/plugins/like.php?app_id=162328350587447&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKFZn1BJ0LYk.js%3Fversion%3D41%23cb%3Df1b061bd3a48f7%26domain%3Dwww.spendeeapp.com%26origin%3Dhttp%253A%252F%252Fwww.spendeeapp.com%252Ff1b5d16f71e0c9%26relation%3Dparent.parent&href=https%3A%2F%2Fwww.facebook.com%2Fspendeeapp&layout=button_count&locale=cs_CZ&sdk=joey&send=false&show_faces=true&width=130
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://www.spendeeapp.com/
+IDList=

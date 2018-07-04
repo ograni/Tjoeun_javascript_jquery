@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>04_ajax_json</title>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script>
+		$(function(){
+			$.ajax({
+				url:'data/data.json',
+				type:'get',
+				dataType:'json',
+				//async:false, //순서대로 처리가 됨
+				async:true, // 순서가 반대로 밑에를 먼저 실행
+				//async:false -> 1. 데이터 전송 완료 2. 동기식 또는 비동기식
+				//async:true -> 2. 동기식 또는 비동기식 1. 데이터 전송 완료
+				//async:false ==> (동기식) 동기식은 어떤 메소드나 함수를 처리할때 해당결과를 기다리는 방식 대표적인 예) 무전기 - 한명밖에 말을 못한다. 즉 쌍방이 아님.
+				//async:true ==> (비동기식) 어떤 함수가 메소드를 처리할때 해당 결과를 기다리지 않고 처리함. 대표적인 예) 전화, 체팅 - 쌍방으로. 1번쪽을 처리할때 2번이 나오고 1번이 나오는 결과.
+				error:function(){
+					alert('데이터를 불러오는데 실패했습니다.');
+				},
+				success:function(data){
+					$('body').append("<div>1. 데이터 전송 완료</div>");
+				}
+			});
+			$('body').append("<div>2. 동기식 또는 비동기식 처리</div>");
+		});
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

@@ -1,0 +1,12 @@
+[DEFAULT]
+BASEURL=http://www.hyundai-veloster.eu/
+[DOC#619]
+BASEURL=https://www.facebook.com/plugins/like.php?app_id&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKFZn1BJ0LYk.js%3Fversion%3D41%23cb%3Df261119471b3374%26domain%3Dwww.hyundai-veloster.eu%26origin%3Dhttp%253A%252F%252Fwww.hyundai-veloster.eu%252Ff307265a5e5ed1%26relation%3Dparent.parent&color_scheme=dark&font=arial&href=http%3A%2F%2Fwww.hyundai-veloster.eu%2F&layout=button_count&locale=en_US&sdk=joey&show_faces=false&width=10
+ORIGURL=http://www.facebook.com/plugins/like.php?app_id=&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKFZn1BJ0LYk.js%3Fversion%3D41%23cb%3Df261119471b3374%26domain%3Dwww.hyundai-veloster.eu%26origin%3Dhttp%253A%252F%252Fwww.hyundai-veloster.eu%252Ff307265a5e5ed1%26relation%3Dparent.parent&color_scheme=dark&font=arial&href=http%3A%2F%2Fwww.hyundai-veloster.eu%2F&layout=button_count&locale=en_US&sdk=joey&show_faces=false&width=10
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://www.hyundai-veloster.eu/
+IDList=
+IconFile=http://www.hyundai-veloster.eu/public/img/favicon.ico
+IconIndex=1

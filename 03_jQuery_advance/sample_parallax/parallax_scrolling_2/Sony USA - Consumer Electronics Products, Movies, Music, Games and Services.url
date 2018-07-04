@@ -1,0 +1,15 @@
+[DEFAULT]
+BASEURL=http://discover.store.sony.com/be-moved/
+[DOC_fb_xdm_frame_http]
+BASEURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f184bc0b0d33eda&origin=http%3A%2F%2Fdiscover.store.sony.com
+[DOC_fb_xdm_frame_https]
+BASEURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f184bc0b0d33eda&origin=http%3A%2F%2Fdiscover.store.sony.com
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://discover.store.sony.com/be-moved/
+IDList=
+IconFile=http://discover.store.sony.com/be-moved/out/favicon.ico
+IconIndex=1

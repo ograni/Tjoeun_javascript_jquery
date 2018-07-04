@@ -1,0 +1,16 @@
+[DEFAULT]
+BASEURL=http://community.saucony.com/kinvara3/
+[DOC_fb_xdm_frame_http]
+BASEURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f10ffa0fbdd3e72&origin=http%3A%2F%2Fcommunity.saucony.com
+[DOC_fb_xdm_frame_https]
+BASEURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f10ffa0fbdd3e72&origin=http%3A%2F%2Fcommunity.saucony.com
+[DOC#521]
+BASEURL=https://www.facebook.com/plugins/like.php?app_id&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKFZn1BJ0LYk.js%3Fversion%3D41%23cb%3Df3dc250ad26df8%26domain%3Dcommunity.saucony.com%26origin%3Dhttp%253A%252F%252Fcommunity.saucony.com%252Ff10ffa0fbdd3e72%26relation%3Dparent.parent&color_scheme=dark&href=http%3A%2F%2Fcommunity.saucony.com%2Fkinvara3%2F&locale=en_US&sdk=joey&send=false&show_faces=false&width=450
+ORIGURL=http://www.facebook.com/plugins/like.php?app_id=&channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FKFZn1BJ0LYk.js%3Fversion%3D41%23cb%3Df3dc250ad26df8%26domain%3Dcommunity.saucony.com%26origin%3Dhttp%253A%252F%252Fcommunity.saucony.com%252Ff10ffa0fbdd3e72%26relation%3Dparent.parent&color_scheme=dark&href=http%3A%2F%2Fcommunity.saucony.com%2Fkinvara3%2F&locale=en_US&sdk=joey&send=false&show_faces=false&width=450
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://community.saucony.com/kinvara3/
+IDList=

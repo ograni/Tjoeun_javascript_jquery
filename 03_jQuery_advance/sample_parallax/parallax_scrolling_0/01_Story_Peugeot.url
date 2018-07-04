@@ -1,0 +1,13 @@
+[DEFAULT]
+BASEURL=http://graphicnovel-hybrid4.peugeot.com/start.html
+[DOC_fb_xdm_frame_http]
+BASEURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=http://static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f1e3984efbb73c9&origin=http%3A%2F%2Fgraphicnovel-hybrid4.peugeot.com
+[DOC_fb_xdm_frame_https]
+BASEURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41
+ORIGURL=https://s-static.ak.facebook.com/connect/xd_arbiter/KFZn1BJ0LYk.js?version=41#channel=f1e3984efbb73c9&origin=http%3A%2F%2Fgraphicnovel-hybrid4.peugeot.com
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://graphicnovel-hybrid4.peugeot.com/start.html
+IDList=

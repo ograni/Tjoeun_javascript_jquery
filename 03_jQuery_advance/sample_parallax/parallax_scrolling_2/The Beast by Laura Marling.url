@@ -1,0 +1,9 @@
+[DEFAULT]
+BASEURL=http://www.the-bea.st/
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://www.the-bea.st/#
+IDList=
+IconFile=http://cdn.umg3.net/thebea/assets/images/global/favicon.ico
+IconIndex=1
