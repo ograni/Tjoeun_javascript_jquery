@@ -34,7 +34,6 @@ $(function(){
            $('.slider_text[data-index!='+index+']').hide(500,function(){$(this).css('left',-300)});
     };
 
-
     // 먼저 텍스트의 위치를 밖으로 옮겨보자. 왜? 밖에서 안으로 들어오게 할꺼니까
     var slider_text = $('.slider_text');
     slider_text.css('left','-500px').each(function(index){
@@ -56,5 +55,4 @@ $(function(){
     moveSlider(randomNumber);
     console.log("abc"+1+2);
     console.log(1+2+"abc");
-
 });
