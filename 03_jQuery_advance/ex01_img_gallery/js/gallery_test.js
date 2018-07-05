@@ -1,5 +1,5 @@
 ﻿$(function(){
-    var current = 0 //현재페이지를 나타냄.
+    var current = 1 //현재페이지를 나타냄.
     var thumbListSize = 6;
     var thumbnail = $('#thumbnail'); //824px
     var prev = thumbnail.find('>.left');
@@ -22,7 +22,7 @@
     });
 
     function listMove(){
-        var tl = containWidth*current*-1;
+        var tl = containWidth*current*-1; //760 * 1  * -1 = -760
         container.stop().animate({left:tl},{duration:500,easing:'easeOutCubic'})
     };
 
@@ -30,5 +30,6 @@
         image.css('display','none');
         var i = $(this).index();
         image.eq(i).css('display', 'block');
-    })
+    });
+    listMove();
 });
