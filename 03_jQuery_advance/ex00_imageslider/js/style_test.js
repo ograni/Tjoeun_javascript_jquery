@@ -1,6 +1,9 @@
 $(function(){
 
         function moveSlider(index){
+            //var willMoveLeft = -(index%3*600); //3으로 나눈 나머지에 곱해라
+            //var willMoveTop = Math.floor(index/3)*-400; //나머지를 버려라 floor
+            //if문을 사용하지 않고 위의 변수 사용으로만 해결 가능함.
             if(index<3){
                 var willMoveLeft = -(index*600);
                 var willMoveTop = 0;
@@ -36,4 +39,5 @@ $(function(){
     });
     var randomNumber = Math.round(Math.random()*5);
      moveSlider(randomNumber);
+     console.log(randomNumber)
 });
