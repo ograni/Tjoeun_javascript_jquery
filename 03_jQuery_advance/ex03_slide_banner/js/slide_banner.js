@@ -7,7 +7,7 @@
     function timer(){
         setIntervalId = setInterval(function(){
             var n = current + 1;
-            if(n == button.size()){n=0}
+            if(n >= visual.size()){n=0}
             button.eq(n).trigger('click')
         },1000);
     };

@@ -1,0 +1,17 @@
+#brandVisual{position: relative; width: 100%; min-width: 1000px; margin: 0 auto; overflow: hidden; height: 500px; background: #8c908c;}
+#brandVisual ul{position: relative; float: left; width: 100%; height: 500px;}
+#brandVisual li{position: absolute; width: 100%; height: 500px;}
+#brandVisual li a{display: block; text-indent: -99999px;}
+#brandVisual .visual_0{left: 0px; background: url(../img/0.png) 50% 0 no-repeat;}
+#brandVisual .visual_1{left: 100%; background: url(../img/1.png) 50% 0 no-repeat;}
+#brandVisual .visual_2{left: 200%; background: url(../img/2.png) 50% 0 no-repeat;}
+
+#buttonList:after{content: ''; display: block; clear: both;}
+	#buttonList li{background: url(../img/btnVisual.png) 0 -16px no-repeat; width: 14px; height: 15px; float: left; position: relative; left: 50%; top: -135px; overflow: hidden; margin: 0 5px; cursor: pointer;}
+	#buttonList li.on{background-position: 0 0;}
+	#buttonList li a{display: block; text-indent: -99999px;}
+	
+	
+	
+	
+	
