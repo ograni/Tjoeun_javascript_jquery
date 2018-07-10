@@ -19,6 +19,7 @@ jQuery(document).ready(function(){
 	/* top 이벤트배너 */
 	$('#top_event').find('.close_btn').on('click', function(){
 		$('#top_event').slideUp(500);
+		$('#quick_menu').css({top:'600px'},500);
 	});
 
 	/* zoom 버튼 */
@@ -48,25 +49,48 @@ jQuery(document).ready(function(){
 
 	/* 검색 창 안내 가이드 */
 	$('#keyword').on('focus',function(){
-		$(this).css('background','none');
+		// $(this).css('background','none');
+		$(this).css('background-position','0 -500px');
 	});
 	$('#keyword').on('blur',function(){
-		if($(this).val()=='') {$(this).css('background','');}//사용자가 아무것도 입력 안했을 경우
+		if($(this).val()=='') {$(this).css('background-position','0 0')}//사용자가 아무것도 입력 안했을 경우
 	});
 
-
 	/* 전체메뉴 */
-
+	$('#total_btn a').on('click',function(){
+		$('#total_menu').slideDown('normal'); //normal == 400 정도
+		return false;
+	});
 
 	/* 전체 메뉴 닫기 버튼 */
-
+	$('#total_close').on('click',function(){
+		$('#total_menu').slideUp('fast'); //normal == 400 정도
+		return false;
+	})
 
 	/* 날짜표기 */
+	var t = new Date(); //객체배열함수
+	var y = t.getFullYear();
+	var m = t.getMonth();
+	var d = t.getDate();
 
+	$('#date_wrap .year').text(y);
+	$('#date_wrap .month').text(m+1);
+	$('#date_wrap .date').text(d);
 
 	/* 관련사이트 이동 */
-
+	$('form[name=rel_f]').on('submit',function(){
+		var url = $('select', this).val();
+		window.open(url);
+		return false;
+	});
 
 	/* 퀵메뉴 */
-
+	var defaultTop = parseInt($('#quick_menu').css('top'));
+	$(window).on('scroll',function(){
+		var scv = $(window).scrollTop();
+		if(scv < 465){scv=465};
+		$('#quick_menu').stop().animate({top:scv+defaultTop+'px'},1000);
+	});
+	$('#quick_menu').css({top:'645px'},1000);
 });
