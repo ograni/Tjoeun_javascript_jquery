@@ -57,9 +57,19 @@ jQuery(document).ready(function(){
 	});
 
 	/* 전체메뉴 */
+	var close = true;
 	$('#total_btn a').on('click',function(){
-		$('#total_menu').slideDown('normal'); //normal == 400 정도
-		return false;
+		if(close == true){
+			$('#total_menu').slideDown('normal'); //normal == 400 정도
+			close=false;
+			return false;
+		}
+		if(close == false){
+			$('#total_menu').slideUp('fast'); //normal == 400 정도
+			close=true;
+			return false;
+		}
+
 	});
 
 	/* 전체 메뉴 닫기 버튼 */
