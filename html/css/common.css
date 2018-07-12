@@ -57,11 +57,11 @@ dd{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 	.join_btn_wrap{margin: 10px 0;}
 	.join_btn_wrap a{padding-left: 2px;}
 	.sch_id_btn{margin-left: 20px;}
-	
+
 /* 유틸 메뉴 영역 */
 #util_menu dd{float: left; padding: 0 5px; overflow: visible;}
 	.util_first li{margin-left: 10px; display: inline; overflow: visible;}
-#util_menu li{float: left;}	
+#util_menu li{float: left;}
 #util_menu{position: absolute; top: 4px; right: 272px;}
 #sch_f{position: absolute; top: 79px; left: 1093px;}
 #keyword{border: 1px solid #dddddd; height: 27px; line-height: 27px; width: 223px; background: url(../img/sch_guide.gif) no-repeat; padding-left: 5px; background-color: #ffffff; border-radius: 10px;}
@@ -121,14 +121,3 @@ dd{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 #relSite_wrap{position: absolute; left: 815px; top: 50px;}
 address{position:absolute; top:54px; left:148px; font-size:11px; letter-spacing:-1px; color:#aaaaaa; line-height:19px;}
 #relSite_wrap h3{ font-size:13px; color:#888888; font-weight:bold; margin-bottom:5px;}
-
-
-
-
-
-
-
-
-
-
-
