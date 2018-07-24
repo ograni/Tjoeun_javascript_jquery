@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>mouseenter, mouseleave</title>
     <link rel="stylesheet" href="css/test18.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/test18.js"></script>
@@ -13,5 +13,13 @@
     <div id="div1">
         div1
     </div>
+    <pre>
+        $('#div1').mouseenter(function(){
+            $('#div1').text('마우스 포인터가 위에 있습니다.');
+        });
+        $('#div1').mouseleave(function(){
+            $('#div1').text('마우스 포인터가 벗어났습니다.');
+        });
+    </pre>
 </body>
 </html>

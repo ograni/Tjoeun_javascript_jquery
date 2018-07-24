@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>hover()</title>
     <link rel="stylesheet" href="css/test19.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/test19.js"></script>
@@ -13,5 +13,17 @@
     <div id="div1">
         div1
     </div>
+    <pre>
+        $('#div1').hover(
+            function(){
+                $('#div1').text('마우스가 위에');
+                $('#div1').css('height','300px');
+            },
+            function(){
+                $('#div1').text('마우스가 밖에');
+                $('#div1').css('height','100px');
+            }
+        );
+    </pre>
 </body>
 </html>

@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>appendTo</title>
     <link rel="stylesheet" href="css/test15.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/test15.js"></script>
 </head>
 <body>
     <div id="div1"></div>
+
+    <pre>
+        var div1 = $('#div1');
+        $('<img src="images/img1.gif" alt=""/>').appendTo(div1)
+    </pre>
 </body>
 </html>

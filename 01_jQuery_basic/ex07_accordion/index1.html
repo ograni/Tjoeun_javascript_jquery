@@ -7,7 +7,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style1.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/style1.js"></script>
+    <!-- <script src="js/style1.js"></script> -->
+    <script>
+        $(function(){
+            $('.accordion').each(function(){
+                var dt = $(this).find('dt');
+                var dd = $(this).find('dd');
+                dd.hide();
+                dt.css('cursor','pointer')
+                dd.eq(0).show();
+
+                dt.click(function(){
+                    var $dt = $(this);
+                    var $dd = $dt.next();
+                    dd.hide();
+                    $dd.show();
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <dl class="accordion">
@@ -42,5 +60,23 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
         </dd>
     </dl>
+    <pre>
+        $(function(){
+            $('.accordion').each(function(){
+                var dt = $(this).find('dt');
+                var dd = $(this).find('dd');
+                dd.hide();
+                dt.css('cursor','pointer')
+                dd.eq(0).show();
+
+                dt.click(function(){
+                    var $dt = $(this);
+                    var $dd = $dt.next();
+                    dd.hide();
+                    $dd.show();
+                });
+            });
+        });
+    </pre>
 </body>
 </html>

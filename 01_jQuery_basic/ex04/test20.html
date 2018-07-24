@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>focus, blur</title>
     <link rel="stylesheet" href="css/test20.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/test20.js"></script>
 </head>
 <body>
     <input type="text" id="input1" />
+
+    <pre>
+        $('#input1').focus(function(){
+            $('#input1').addClass('active');
+        });
+        $('#input1').blur(function(){
+            $('#input1').removeClass('active');
+        });
+    </pre>
 </body>
 </html>

@@ -1,3 +1,6 @@
+$(function(){
+    $('.rollover').rollover();
+});
 $.fn.rollover = function(options){
     var abc = $.extend({
         off:'_off', on:'_on'

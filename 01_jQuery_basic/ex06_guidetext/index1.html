@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style1.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/style1.js"></script>
+    <!-- <script src="js/style1.js"></script> -->
+    <script src="js/style1_self.js"></script>
 </head>
 <body>
     <form action="">
@@ -15,5 +16,26 @@
         <textarea name="name" id="" rows="10" cols="30" class="guideText">메세지를 입력해주세요</textarea>
         <input type="submit" value="저장"/>
     </form>
+    <pre>
+        $('.guideText').each(function(){
+            var guideText = this.defaultValue;
+            var element = $(this);
+            element.focus(function(){
+                if(element.val() === guideText){
+                    element.val('');
+                    element.removeClass('guide');
+                };
+            });
+            element.blur(function(){
+                if(element.val() ===''){
+                    element.val(guideText);
+                    element.addClass('guide');
+                }
+            });
+            if(element.val()===guideText){
+                element.addClass('guide');
+            }
+        });
+    </pre>
 </body>
 </html>

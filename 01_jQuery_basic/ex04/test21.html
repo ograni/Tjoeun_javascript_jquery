@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>click()해서 text()로 내용 넣기</title>
     <link rel="stylesheet" href="css/test21.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/test21.js"></script>
@@ -15,5 +15,12 @@
     <div class="clickText">div!</div>
     <div class="clickText">div!</div>
     <div class="clickText">div!</div>
+
+    <pre>
+        var elements = $('.clickText');
+        elements.click(function(){
+            elements.text('클릭되었습니다.');
+        });
+    </pre>
 </body>
 </html>

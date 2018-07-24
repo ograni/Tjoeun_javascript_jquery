@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>append</title>
     <link rel="stylesheet" href="css/test11.css">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/test11.js"></script>
@@ -14,5 +14,15 @@
     <div id="apple">apple</div>
     <div id="banana">banana</div>
     <div id="orange">orange</div>
+    <pre>
+        var basket = $('#basket');
+        var apple = $('#apple');
+        var banana = $('#banana');
+        var orange = $('#orange');
+
+        basket.append(apple);
+        basket.append(banana);
+        basket.append(orange);
+    </pre>
 </body>
 </html>

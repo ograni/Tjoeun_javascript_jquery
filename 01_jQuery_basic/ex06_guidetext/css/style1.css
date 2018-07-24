@@ -2,6 +2,6 @@
 body{padding: 30px;}
 form{padding: 0 0 10px;}
 
-.guide{color:#999}
+.guide{color:red}
 .guideText{}
 textarea{display: block; width: 300px;margin:5px 0 5px;}

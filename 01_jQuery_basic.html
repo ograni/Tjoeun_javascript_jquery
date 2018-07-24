@@ -14,11 +14,18 @@
         article{margin: 5px;  vertical-align: top;  width:32%; flex-flow: }
         div{border: 1px solid #ccc; margin-top: 3px; padding-right: 15px;}
         p{background: rgb(240, 164, 116); font-size: 14px; font-weight: bold; padding: 15px; }
+        nav{background: #333; width: 100%; height: 44px; line-height: 44px; position: fixed; top: 0px; text-align: center}
+        nav span a{color:#fff !important; padding: 0 20px; display: inline-block;}
     </style>
 
 </head>
 <body>
-    <section>
+    <nav>
+        <span><a href="">basic</a></span>
+        <span><a href="">middle</a></span>
+        <span><a href="">advance</a></span>
+    </nav>
+    <section style="margin-top: 50px">
         <article>
             <p>ex00_1 - 셀렉터와 선택자</p>
             <div>
@@ -94,18 +101,18 @@
                     <li><a href="01_jQuery_basic\ex04\test08.html" target="_blank">attr() - 속성 변경</a></li>
                     <li><a href="01_jQuery_basic\ex04\test09.html" target="_blank">val() - form default value값 변경</a></li>
                     <li><a href="01_jQuery_basic\ex04\test10.html" target="_blank">addClass(), removeClass()</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test11.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test12.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test13.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test14.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test15.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test16.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test17.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test18.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test19.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test20.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test21.html" target="_blank"></a></li>
-                    <li><a href="01_jQuery_basic\ex04\test22.html" target="_blank"></a></li>
+                    <li><a href="01_jQuery_basic\ex04\test11.html" target="_blank">append()- A append B (A뒤에 B를)</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test12.html" target="_blank">appendTo() - A appendTo B (B뒤에 A를)</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test13.html" target="_blank">prepend() - A prepend B (A앞으로 B를)</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test14.html" target="_blank">prependTo() - A prependTo B (B앞으로 A를)</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test15.html" target="_blank">appendTo()- img넣기</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test16.html" target="_blank">remove()</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test17.html" target="_blank">click()해서 text()로 내용 넣기</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test18.html" target="_blank">mouseenter(), mouseleave()</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test19.html" target="_blank">hover()</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test20.html" target="_blank">focus(), blur()</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test21.html" target="_blank">click()해서 text()로 내용 넣기</a></li>
+                    <li><a href="01_jQuery_basic\ex04\test22.html" target="_blank">$(this)를 click()해서 text()로 내용 넣기</a></li>
                 </ol>
             </div>
         </article>
@@ -113,8 +120,9 @@
             <p>ex05_rollover</p>
             <div>
                 <ol>
-                    <li><a href=".html" target="_blank"></a></li>
-                    <li><a href=".html" target="_blank"></a></li>
+                    <li><a href="01_jQuery_basic\ex05_rollover\index1.html" target="_blank">hover() - 탭 이미지 동적 생성 및 변경</a></li>
+                    <li><a href="01_jQuery_basic\ex05_rollover\index2.html" target="_blank">mouseenter(), mouseleave() - 탭 이미지 동적 생성 및 변경</a></li>
+                    <li><a href="01_jQuery_basic\ex05_rollover\plugin_rollover.html" target="_blank">extend() - fn.name=function()플러그인 만들기 </a></li>
                 </ol>
             </div>
         </article>
@@ -122,8 +130,7 @@
             <p>ex06_guidetext</p>
             <div>
                 <ol>
-                    <li><a href=".html" target="_blank"></a></li>
-                    <li><a href=".html" target="_blank"></a></li>
+                    <li><a href="01_jQuery_basic\ex06_guidetext\index1.html" target="_blank">form value 제어 </a></li>
                 </ol>
             </div>
         </article>
@@ -131,8 +138,8 @@
             <p>ex07_accordion</p>
             <div>
                 <ol>
-                    <li><a href=".html" target="_blank"></a></li>
-                    <li><a href=".html" target="_blank"></a></li>
+                    <li><a href="01_jQuery_basic\ex07_accordion\index1.html" target="_blank">아코디언 메뉴 (each, find, hide, show, eq)</a></li>
+                    <li><a href="01_jQuery_basic\ex07_accordion\index2.html" target="_blank">아코디언 메뉴 (function()에 담아 사용하기)</a></li>
                 </ol>
             </div>
         </article>
@@ -140,8 +147,7 @@
             <p>ex07_ajax</p>
             <div>
                 <ol>
-                    <li><a href=".html" target="_blank"></a></li>
-                    <li><a href=".html" target="_blank"></a></li>
+                    <li><a href="01_jQuery_basic\ex07_ajax\2\index.html" target="_blank">안배웠어요</a></li>
                 </ol>
             </div>
         </article>
