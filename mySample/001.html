@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>스크롤이벤트</title>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <style>
         *{margin: 0; padding: 0;}
@@ -20,16 +20,38 @@
     <script>
         $(function(){
             var div = $('div');
-            var i = div.size(); //4개야.
-            console.log(i);
+            var windowHt = $(window).height();
+            var docHt = $(document).height();
+            div.height(windowHt);
+
+            $(window).resize(function(){
+                var windowHt = $(window).height()
+                div.height(windowHt);
+            });
+
+            // var i = div.size(); //4개야.
+
+
             div.each(function(){
                 var thisDiv = $(this);
-                thisDiv.height() = $(window).height();
-                console.log(thisDiv.height())
+                var i = thisDiv.index();
+                var current = thisDiv.eq(i);
+                var currentSCT = $(window).scrollTop();  //몇번짼지 알아내서 eq번째랑 동기화
                 // thisDiv.css('height',)
                 // 현재의 div에서 다음div로 이동을 해야 하므로 현재의 번호 즉 eq번째를 잡고
                 // 아 인덱스로 몇개인지 먼저 알아보고 if로 돌리는게 나을수도 있겠다
+console.log(i);
+                $(window).scroll(function(){
+                    if(currentSCT >= 0 && currentSCT < thisDiv.eq(0).offset().bottom){
+                        thisDiv.eq(0).css('background','pink')
+console.log(thisDiv.eq(0).offset().bottom);
 
+
+                    }
+                    // var nextDiv = thisDiv.next();
+                    // var nextDivTop = nextDiv.offset().top
+                    // thisDiv.offset({top:nextDivTop});
+                });
                 // $(window).scroll(function(){
                 //     if(thisDiv.offset().top == $(window).scrollTop()){
                 //         console.log('thisDiv.offset().top='+thisDiv.offset().top);
