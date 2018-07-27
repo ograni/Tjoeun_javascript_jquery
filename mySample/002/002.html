@@ -20,8 +20,112 @@
 	<!-- <script src="js/mediaelement-and-player.min.js"></script> -->
 	<!-- <script src="js/prefixfree.min.js"></script> -->
 	<script src="js/main.js"></script>
+	<style>
+		body, html{height:100%}
+		#test{width:100%; background: black; position: relative; padding-bottom: 50%}
+		/* #test::after{content: ''; display:block; clear:both;} */
+		#test div{width:20%; height:100%; position: absolute; background-size:cover; background-repeat: no-repeat; background-position: 50%}
+		/* #test div.mem1{background:rgb(76, 247, 19); left: 0} */
+		#test div.mem1{background-image: url(images/member_1.jpg)}
+		#test div.mem2{background-image: url(images/member_2.jpg); left: 20%}
+		#test div.mem3{background-image: url(images/member_3.jpg); left:40%}
+		#test div.mem4{background-image: url(images/member_4.jpg); left:60%}
+		#test div.mem5{background-image: url(images/member_5.jpg); left:80%}
+
+		#test div.memInfoWrap{position: relative; width:100%;}
+		#test div.memInfoWrap .memInfo{position:absolute; margin:auto; left:0; right:0; top:0; bottom:0; margin-bottom: 50px; width: 60%; height: 40%; background: rgba(255,255,255,.5);}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$(window).resize(function(){
+				var winW = $(window).width();
+				var defaultW = 20;
+				var duration = 300;
+				var ease = 'easeOutBack';
+				var overW = winW/2.5
+				var otherW = (winW - overW)/4
+				var mem = $('#test > div');
+				var mem1W = $('.mem1');
+				var mem2W = $('.mem2');
+				var mem3W = $('.mem3');
+				var mem4W = $('.mem4');
+				var mem5W = $('.mem5');
+
+				function reset(){
+					mem1W.stop().animate({width:defaultW+'%', left:0},duration, ease)
+					mem2W.stop().animate({width:defaultW+'%', left:defaultW+'%'},duration, ease)
+					mem3W.stop().animate({width:defaultW+'%', left:defaultW*2+'%'},duration, ease)
+					mem4W.stop().animate({width:defaultW+'%', left:defaultW*3+'%'},duration, ease)
+					mem5W.stop().animate({width:defaultW+'%', left:defaultW*4+'%'},duration, ease)
+				}
+				mem1W.hover(
+					function(){
+						mem1W.stop().animate({width:overW},duration,ease)
+						mem2W.stop().animate({width:otherW, left:overW},duration, ease)
+						mem3W.stop().animate({width:otherW, left:(otherW+overW)},duration, ease)
+						mem4W.stop().animate({width:otherW, left:(otherW*2+overW)},duration, ease)
+						mem5W.stop().animate({width:otherW, left:(otherW*3+overW)},duration, ease)
+					},
+					function(){
+						reset()
+					}
+				);
+				mem2W.hover(
+					function(){
+						mem1W.stop().animate({width:otherW},duration,ease)
+						mem2W.stop().animate({width:overW, left:otherW},duration, ease)
+						mem3W.stop().animate({width:otherW, left:(otherW+overW)},duration, ease)
+						mem4W.stop().animate({width:otherW, left:(otherW*2+overW)},duration, ease)
+						mem5W.stop().animate({width:otherW, left:(otherW*3+overW)},duration, ease)
+					},
+					function(){
+						reset()
+					}
+				);
+
+				mem3W.hover(
+					function(){
+						mem1W.stop().animate({width:otherW},duration,ease)
+						mem2W.stop().animate({width:otherW, left:otherW},duration, ease)
+						mem3W.stop().animate({width:overW, left:otherW*2},duration, ease)
+						mem4W.stop().animate({width:otherW, left:(otherW*2+overW)},duration, ease)
+						mem5W.stop().animate({width:otherW, left:(otherW*3+overW)},duration, ease)
+					},
+					function(){
+						reset()
+					}
+				);
+				mem4W.hover(
+					function(){
+						mem1W.stop().animate({width:otherW},duration,ease)
+						mem2W.stop().animate({width:otherW, left:otherW},duration, ease)
+						mem3W.stop().animate({width:otherW, left:otherW*2},duration, ease)
+						mem4W.stop().animate({width:overW, left:otherW*3},duration, ease)
+						mem5W.stop().animate({width:otherW, left:(otherW*3+overW)},duration, ease)
+					},
+					function(){
+						reset()
+					}
+				);
+				mem5W.hover(
+					function(){
+						mem1W.stop().animate({width:otherW},duration,ease)
+						mem2W.stop().animate({width:otherW, left:otherW},duration, ease)
+						mem3W.stop().animate({width:otherW, left:otherW*2},duration, ease)
+						mem4W.stop().animate({width:otherW, left:(otherW*3)},duration, ease)
+						mem5W.stop().animate({width:overW, left:(otherW*4)},duration, ease)
+					},
+					function(){
+						reset()
+					}
+				);
+			});
+			$(window).trigger('resize');
+		})
+	</script>
 </head>
 <body>
+	<!--
 	<div id="header">
 		<div id="logo">
 			<li data-menuanchor="firstPage">
@@ -40,7 +144,7 @@
 		<div id="content section1" class="section active">
 			<div class="scene" id="scene-3">
 				<div class="mask cf" id="apple-1">
-					<img src="images/iu_01.jpg" alt="" />
+					<img src="images/member_1.jpg" alt="" />
 					<div class="bar"></div>
 					<div class="line"></div>
 				</div>
@@ -59,9 +163,30 @@
 					<div class="bar"></div>
 					<div class="line"></div>
 				</div>
+				<div class="mask cf" id="apple-4">
+					<img src="images/iu_04.jpg" alt="" />
+					<div class="bar"></div>
+					<div class="line"></div>
+				</div>
 			</div>
 		</div>
 
+	</div>
+	-->
+	<div id="test">
+		<div class="mem1">
+			<div class="memInfoWrap">
+				<div class="memInfo">
+					가나다라
+				</div>
+			</div>
+
+
+		</div>
+		<div class="mem2">222</div>
+		<div class="mem3">333</div>
+		<div class="mem4">444</div>
+		<div class="mem5">555</div>
 	</div>
 </body>
 </html>
