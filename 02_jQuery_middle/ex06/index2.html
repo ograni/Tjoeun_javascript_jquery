@@ -25,5 +25,19 @@
             <div><img src="img/img04.png" alt="img4"></div>
         </div>
     </div>
+    <pre>
+        var tab = $('#wrap #tab > li');
+        var content = $('#content > div');
+        tab.on('click',function(e){
+            e.preventDefault();
+            var tg = $(this);
+            var tc = tg.find('>a');
+            tab.find('>a').removeClass('on');
+            tc.addClass('on');
+             i = tg.index();
+             content.css('display','none');
+             content.eq(i).css('display','block');
+        });
+    </pre>
 </body>
 </html>

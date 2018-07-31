@@ -18,7 +18,7 @@ $(function(){
             //자 이제 기본 세팅은 다 끝났으니까 움직일껄 해보자
             onImg.css('display','block');
             offImg.css('display','none');
-            menuImage.animate({height:imageHeight},{duration:250,queue:false});
+            menuImage.animate({height:imageHeight},{duration:250});
         },
         function(){
             var targetMenu = $(this);
@@ -36,7 +36,7 @@ $(function(){
             //자 이제 기본 세팅은 다 끝났으니까 움직일껄 해보자
             onImg.css('display','none');
             offImg.css('display','block');
-            menuImage.animate({height:0},{duration:250,queue:false});
+            menuImage.animate({height:0},{duration:250});
         }
     )
 })

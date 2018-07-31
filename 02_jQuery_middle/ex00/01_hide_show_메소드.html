@@ -17,18 +17,18 @@
 				var showBtn = control.find('> input:eq(0)');
 				var hideBtn = control.find('> input:eq(1)');
 				var box = $('#wrapper #box');
-				
+
 				showBtn.click(function(){
-					
+					box.show();
 				});
-				
+
 				hideBtn.click(function(){
-					
+					box.hide();
 				});
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<div id="control">
 			<input type="button" value="show" />
@@ -36,7 +36,7 @@
 		</div>
 		<div id="wrapper">
 			<div id="box">
-				
+
 			</div>
 		</div>
 	</body>

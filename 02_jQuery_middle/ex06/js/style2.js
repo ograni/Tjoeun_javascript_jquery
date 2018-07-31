@@ -1,6 +1,6 @@
 $(function(){
     var tab = $('#wrap #tab > li');
-    var content = $('#content > div');\
+    var content = $('#content > div');
     tab.on('click',function(e){
         e.preventDefault();
         var tg = $(this);

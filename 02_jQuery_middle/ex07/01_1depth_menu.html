@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/common.css" />
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
-	<script src="js/style_hansol.js"></script>
+	<script src="js/style_self.js"></script>
 	<!-- <script src="js/style1.js"></script> -->
 </head>
 
@@ -68,6 +68,37 @@
 			</li>
 		</ul>
 	</div>
+	<pre>
+		var menu = $('#nav > li');
+	    menu.hover(
+	        function(){
+	            var targetMenu = $(this);
+
+	            var onImg = targetMenu.find('.text_image > .on');
+	            var offImg = targetMenu.find('.text_image > .off');
+
+	            var menuImage = targetMenu.find('.menu_image');
+
+	            var imageHeight = menuImage.find('img').innerHeight();
+
+	            onImg.css('display','block');
+	            offImg.css('display','none');
+	            menuImage.animate({height:imageHeight},{duration:250});
+	        },
+	        function(){
+	            var targetMenu = $(this);
+
+	            var onImg = targetMenu.find('.text_image > .on');
+	            var offImg = targetMenu.find('.text_image > .off');
+
+	            var menuImage = targetMenu.find('.menu_image');
+
+	            var imageHeight = menuImage.find('img').innerHeight();
+	            onImg.css('display','none');
+	            offImg.css('display','block');
+	            menuImage.animate({height:0},{duration:250});
+	        }
+	</pre>
 </body>
 
 </html>
