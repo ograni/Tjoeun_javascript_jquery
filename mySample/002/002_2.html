@@ -22,15 +22,15 @@
 	<script src="js/main.js"></script>
 	<style>
 		body, html{height:100%}
-		#test{width:100%;background: black; position: relative;}
+		#test{width:100%; background: black; position: relative}
 		/* #test::after{content: ''; display:block; clear:both;} */
-		#test div{width:20%; height:100%; position: absolute; background-size:cover; background-repeat: no-repeat; background-position: 50%; box-sizing: border-box;}
+		#test div{width:20%; height:100%; position: absolute; background-size:cover; background-repeat: no-repeat; background-position: 50%}
 		/* #test div.mem1{background:rgb(76, 247, 19); left: 0} */
 		#test div.mem1{background-image: url(images/member_1.jpg)}
-		#test div.mem2{background-image: url(images/member_2.jpg); left: 20%; border-left:1px solid #fff}
-		#test div.mem3{background-image: url(images/member_3.jpg); left:40%;border-left:1px solid #fff}
-		#test div.mem4{background-image: url(images/member_4.jpg); left:60%; border-left:1px solid #fff}
-		#test div.mem5{background-image: url(images/member_5.jpg); left:80%; border-left:1px solid #fff}
+		#test div.mem2{background-image: url(images/member_2.jpg); left: 20%}
+		#test div.mem3{background-image: url(images/member_3.jpg); left:40%}
+		#test div.mem4{background-image: url(images/member_4.jpg); left:60%}
+		#test div.mem5{background-image: url(images/member_5.jpg); left:80%}
 
 		#test div.memInfoWrap{position: relative; width:100%;}
 		#test div.memInfoWrap .memInfo{position:absolute; margin:auto; left:0; right:0; top:0; bottom:0; margin-bottom: 50px; width: 60%; height: 40%; background: rgba(255,255,255,.5);}
@@ -43,9 +43,9 @@
 				var winW = $(window).width();
 				var defaultW = 20;
 				var duration = 300;
-				var ease = '';
-				var overW = winW/2.5
-				var otherW = (winW - overW)/4
+				var ease = 'easeOutCubic';
+				var OverW = winW/2.5
+				var otherW = (winW - OverW)/4
 				var mem = $('#test > div');
 				var mem1W = $('.mem1');
 				var mem2W = $('.mem2');
@@ -62,11 +62,11 @@
 				}
 				mem1W.hover(
 					function(){
-						mem1W.stop().animate({width:overW},duration,ease)
-						mem2W.stop().animate({width:otherW, left:overW},duration, ease)
-						mem3W.stop().animate({width:otherW, left:(otherW+overW)},duration, ease)
-						mem4W.stop().animate({width:otherW, left:(otherW*2+overW)},duration, ease)
-						mem5W.stop().animate({width:otherW, left:(otherW*3+overW)},duration, ease)
+						mem1W.stop().animate({width:OverW},duration,ease)
+						mem2W.stop().animate({width:otherW, left:OverW},duration, ease)
+						mem3W.stop().animate({width:otherW, left:(otherW+OverW)},duration, ease)
+						mem4W.stop().animate({width:otherW, left:(otherW*2+OverW)},duration, ease)
+						mem5W.stop().animate({width:otherW, left:(otherW*3+OverW)},duration, ease)
 					},
 					function(){
 						reset()
@@ -75,10 +75,10 @@
 				mem2W.hover(
 					function(){
 						mem1W.stop().animate({width:otherW},duration,ease)
-						mem2W.stop().animate({width:overW, left:otherW},duration, ease)
-						mem3W.stop().animate({width:otherW, left:(otherW+overW)},duration, ease)
-						mem4W.stop().animate({width:otherW, left:(otherW*2+overW)},duration, ease)
-						mem5W.stop().animate({width:otherW, left:(otherW*3+overW)},duration, ease)
+						mem2W.stop().animate({width:OverW, left:otherW},duration, ease)
+						mem3W.stop().animate({width:otherW, left:(otherW+OverW)},duration, ease)
+						mem4W.stop().animate({width:otherW, left:(otherW*2+OverW)},duration, ease)
+						mem5W.stop().animate({width:otherW, left:(otherW*3+OverW)},duration, ease)
 					},
 					function(){
 						reset()
@@ -89,9 +89,9 @@
 					function(){
 						mem1W.stop().animate({width:otherW},duration,ease)
 						mem2W.stop().animate({width:otherW, left:otherW},duration, ease)
-						mem3W.stop().animate({width:overW, left:otherW*2},duration, ease)
-						mem4W.stop().animate({width:otherW, left:(otherW*2+overW)},duration, ease)
-						mem5W.stop().animate({width:otherW, left:(otherW*3+overW)},duration, ease)
+						mem3W.stop().animate({width:OverW, left:otherW*2},duration, ease)
+						mem4W.stop().animate({width:otherW, left:(otherW*2+OverW)},duration, ease)
+						mem5W.stop().animate({width:otherW, left:(otherW*3+OverW)},duration, ease)
 					},
 					function(){
 						reset()
@@ -102,8 +102,8 @@
 						mem1W.stop().animate({width:otherW},duration,ease)
 						mem2W.stop().animate({width:otherW, left:otherW},duration, ease)
 						mem3W.stop().animate({width:otherW, left:otherW*2},duration, ease)
-						mem4W.stop().animate({width:overW, left:otherW*3},duration, ease)
-						mem5W.stop().animate({width:otherW, left:(otherW*3+overW)},duration, ease)
+						mem4W.stop().animate({width:OverW, left:otherW*3},duration, ease)
+						mem5W.stop().animate({width:otherW, left:(otherW*3+OverW)},duration, ease)
 					},
 					function(){
 						reset()
@@ -115,7 +115,7 @@
 						mem2W.stop().animate({width:otherW, left:otherW},duration, ease)
 						mem3W.stop().animate({width:otherW, left:otherW*2},duration, ease)
 						mem4W.stop().animate({width:otherW, left:(otherW*3)},duration, ease)
-						mem5W.stop().animate({width:overW, left:(otherW*4)},duration, ease)
+						mem5W.stop().animate({width:OverW, left:(otherW*4)},duration, ease)
 					},
 					function(){
 						reset()
