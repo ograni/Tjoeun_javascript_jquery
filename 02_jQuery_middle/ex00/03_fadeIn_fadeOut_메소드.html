@@ -17,18 +17,18 @@
 					var fadeInBtn = control.find('> input:eq(0)');
 					var fadeoutBtn = control.find('> input:eq(1)');
 					var box = $('#wrapper #box');
-					
+
 					fadeInBtn.click(function(){
-						
+						box.fadeIn();
 					});
-					
+
 					fadeoutBtn.click(function(){
-						
+						box.fadeOut();
 					});
 				});
 		</script>
 	</head>
-	
+
 	<body>
 		<div id="control">
 			<input type="button" value="fadeIn" />
@@ -36,7 +36,7 @@
 		</div>
 		<div id="wrapper">
 			<div id="box">
-				
+
 			</div>
 		</div>
 	</body>

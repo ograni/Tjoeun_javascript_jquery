@@ -17,198 +17,217 @@
         nav{background: #333; width: 100%; height: 44px; line-height: 44px; position: fixed; top: 0px; text-align: center}
         nav span a{color:#fff !important; padding: 0 20px; display: inline-block;}
     </style>
+    <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+    <!-- <script>
+        $(function(){
+            var nav = $('nav > span')
+            var div = $('body > div')
+            div.attr("style", "display:none");
+            $('body').find('.on').attr("style", "display:block").css('margin-top','100px');
 
+
+
+
+
+        });
+    </script> -->
 </head>
 <body>
     <nav>
-        <span><a href="">basic</a></span>
-        <span><a href="">middle</a></span>
-        <span><a href="">advance</a></span>
+        <span><a href="#basic">basic</a></span>
+        <span><a href="#middle">middle</a></span>
+        <span><a href="#advance">advance</a></span>
     </nav>
-    <section style="margin-top: 50px">
-        <article>
-            <p>ex00_1 - 셀렉터와 선택자</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex00_1\01_아이디로_엘리먼트찾기.html" target="_blank">id로 특정 엘리먼트 색 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\02_클래스로_엘리먼트찾기.html" target="_blank">class로 특정 엘리먼트 색 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\03_자식_엘리먼트찾기.html" target="_blank">자식 선택자로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\04_형제_엘리먼트찾기.html" target="_blank">인접 형제 선택자로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\05_속성으로_엘리먼트찾기.html" target="_blank">속성 선택자로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\06_first_필터셀렉터.html" target="_blank">[필터셀렉터] first로 css 속성 변경 </a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\07_last_필터셀렉터.html" target="_blank">[필터셀렉터] last로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\08_even_필터셀렉터.html" target="_blank">[필터셀렉터] even로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\09_odd_필터셀렉터.html" target="_blank">[필터셀렉터] odd로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\10_eq_필터셀렉터.html" target="_blank">[필터셀렉터] eq로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\11_gt_필터셀렉터.html" target="_blank">[필터셀렉터] gt로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\12_lt_필터셀렉터.html" target="_blank">[필터셀렉터] lt로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\13_has_필터셀렉터.html" target="_blank">[필터셀렉터] has로 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_1\14_not_필터셀렉터.html" target="_blank">[필터셀렉터] not로 css 속성 변경</a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex00_2 - jQuery 메소드</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex00_2\01_size_메소드.html" target="_blank">size() - 갯수 세어보기</a></li>
-                    <li><a href="01_jQuery_basic\ex00_2\02_eq_메소드.html" target="_blank">eq() - css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_2\03_first_and_last_메소드.html" target="_blank">first(), last() - css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_2\04_index_메소드.html" target="_blank">index() - 순서 알아보기</a></li>
-                    <li><a href="01_jQuery_basic\ex00_2\05_not_메소드.html" target="_blank">not() - 특정 엘리먼트 제외 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_2\06_filter_메소드.html" target="_blank">filter() - 특정 엘리먼트 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_2\07_slice_메소드.html" target="_blank">slice() - 지정된 범위 內 css 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_2\08_has_메소드.html" target="_blank">has() - 특정 엘리먼트를 지니고 있는 엘리먼트의 css 속성을 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_2\09_each_메소드.html" target="_blank"></a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex00_3</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex00_3\01_children_메소드.html" target="_blank">children() - 자식 엘리먼트 css 스타일 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_3\02_next_메소드.html" target="_blank">next() - 지정된 엘리먼트 다음 엘리먼트 css 스타일 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_3\03_nextAll_메소드.html" target="_blank">nextAll() - 지정된 엘리먼트 다음 엘리먼트들의 css 스타일 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_3\04_nextUntil_메소드.html" target="_blank">nextUntil() - 지정된 영역의 엘리먼트까지 css 스타일 변경(본인 불포함) </a></li>
-                    <li><a href="01_jQuery_basic\ex00_3\05_parent_메소드.html" target="_blank">parent() - 지정된 엘리먼트의 부모 엘리먼트 css 스타일 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_3\06_parents_메소드.html" target="_blank">parents() - 지정된 엘리먼트의 부모 엘리먼트들의 css 스타일 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex00_3\07_parentsUntil_메소드.html" target="_blank">parentsUntil() - 지정된 영역의 엘리먼트까지 css 스타일 변경(본인 불포함)</a></li>
-                    <li><a href="01_jQuery_basic\ex00_3\08_find_메소드.html" target="_blank">find() - 특정 엘리먼트 찾기</a></li>
-                    <li><a href="01_jQuery_basic\ex00_3\09_is_메소드.html" target="_blank">is() - 특정 엘리먼트 존재 여부 확인 </a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex00_all_images</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex00_all_images\test01.html" target="_blank">hide()를 이용하여 div 숨기기</a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex04</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex04\test01.html" target="_blank">show(), hide() </a></li>
-                    <li><a href="01_jQuery_basic\ex04\test02.html" target="_blank">width, height</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test03.html" target="_blank">fadeIn(), fadeOut()</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test04.html" target="_blank">slideDown(), slideUp</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test05.html" target="_blank">animate()</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test06.html" target="_blank">text(), html() - 텍스트 변환</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test07.html" target="_blank">empty() - 영역 비우기</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test08.html" target="_blank">attr() - 속성 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test09.html" target="_blank">val() - form default value값 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test10.html" target="_blank">addClass(), removeClass()</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test11.html" target="_blank">append()- A append B (A뒤에 B를)</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test12.html" target="_blank">appendTo() - A appendTo B (B뒤에 A를)</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test13.html" target="_blank">prepend() - A prepend B (A앞으로 B를)</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test14.html" target="_blank">prependTo() - A prependTo B (B앞으로 A를)</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test15.html" target="_blank">appendTo()- img넣기</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test16.html" target="_blank">remove()</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test17.html" target="_blank">click()해서 text()로 내용 넣기</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test18.html" target="_blank">mouseenter(), mouseleave()</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test19.html" target="_blank">hover()</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test20.html" target="_blank">focus(), blur()</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test21.html" target="_blank">click()해서 text()로 내용 넣기</a></li>
-                    <li><a href="01_jQuery_basic\ex04\test22.html" target="_blank">$(this)를 click()해서 text()로 내용 넣기</a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex05_rollover</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex05_rollover\index1.html" target="_blank">hover() - 탭 이미지 동적 생성 및 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex05_rollover\index2.html" target="_blank">mouseenter(), mouseleave() - 탭 이미지 동적 생성 및 변경</a></li>
-                    <li><a href="01_jQuery_basic\ex05_rollover\plugin_rollover.html" target="_blank">extend() - fn.name=function()플러그인 만들기 </a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex06_guidetext</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex06_guidetext\index1.html" target="_blank">form value 제어 </a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex07_accordion</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex07_accordion\index1.html" target="_blank">아코디언 메뉴 (each, find, hide, show, eq)</a></li>
-                    <li><a href="01_jQuery_basic\ex07_accordion\index2.html" target="_blank">아코디언 메뉴 (function()에 담아 사용하기)</a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex07_ajax</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex07_ajax\2\index.html" target="_blank">안배웠어요</a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex08_imgslider</p>
-            <div>
-                <ol>
-                    <li><a href=".html" target="_blank"></a></li>
-                    <li><a href=".html" target="_blank"></a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex09_tabcontent</p>
-            <div>
-                <ol>
-                    <li><a href=".html" target="_blank"></a></li>
-                    <li><a href=".html" target="_blank"></a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex10_animate</p>
-            <div>
-                <ol>
-                    <li><a href="01_jQuery_basic\ex10_animate\animate1.html" target="_blank">animate() 를 이용해서 배너 만들기</a></li>
-                    <li><a href="01_jQuery_basic\ex10_animate\animate2.html" target="_blank">animate() 를 이용해서 다중 배너 만들기</a></li>
-                    <li><a href="01_jQuery_basic\ex10_animate\easing.html" target="_blank">easing 종류</a></li>
-                    <li><a href="01_jQuery_basic\ex10_animate\stop.html" target="_blank">stop() 종류</a></li>
+    <div id="basic" class="on">
+        <section>
+            <article>
+                <p>ex00_1 - 셀렉터와 선택자</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex00_1\01_아이디로_엘리먼트찾기.html" target="_blank">id로 특정 엘리먼트 색 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\02_클래스로_엘리먼트찾기.html" target="_blank">class로 특정 엘리먼트 색 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\03_자식_엘리먼트찾기.html" target="_blank">자식 선택자로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\04_형제_엘리먼트찾기.html" target="_blank">인접 형제 선택자로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\05_속성으로_엘리먼트찾기.html" target="_blank">속성 선택자로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\06_first_필터셀렉터.html" target="_blank">[필터셀렉터] first로 css 속성 변경 </a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\07_last_필터셀렉터.html" target="_blank">[필터셀렉터] last로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\08_even_필터셀렉터.html" target="_blank">[필터셀렉터] even로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\09_odd_필터셀렉터.html" target="_blank">[필터셀렉터] odd로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\10_eq_필터셀렉터.html" target="_blank">[필터셀렉터] eq로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\11_gt_필터셀렉터.html" target="_blank">[필터셀렉터] gt로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\12_lt_필터셀렉터.html" target="_blank">[필터셀렉터] lt로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\13_has_필터셀렉터.html" target="_blank">[필터셀렉터] has로 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_1\14_not_필터셀렉터.html" target="_blank">[필터셀렉터] not로 css 속성 변경</a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex00_2 - jQuery 메소드</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex00_2\01_size_메소드.html" target="_blank">size() - 갯수 세어보기</a></li>
+                        <li><a href="01_jQuery_basic\ex00_2\02_eq_메소드.html" target="_blank">eq() - css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_2\03_first_and_last_메소드.html" target="_blank">first(), last() - css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_2\04_index_메소드.html" target="_blank">index() - 순서 알아보기</a></li>
+                        <li><a href="01_jQuery_basic\ex00_2\05_not_메소드.html" target="_blank">not() - 특정 엘리먼트 제외 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_2\06_filter_메소드.html" target="_blank">filter() - 특정 엘리먼트 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_2\07_slice_메소드.html" target="_blank">slice() - 지정된 범위 內 css 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_2\08_has_메소드.html" target="_blank">has() - 특정 엘리먼트를 지니고 있는 엘리먼트의 css 속성을 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_2\09_each_메소드.html" target="_blank"></a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex00_3</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex00_3\01_children_메소드.html" target="_blank">children() - 자식 엘리먼트 css 스타일 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_3\02_next_메소드.html" target="_blank">next() - 지정된 엘리먼트 다음 엘리먼트 css 스타일 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_3\03_nextAll_메소드.html" target="_blank">nextAll() - 지정된 엘리먼트 다음 엘리먼트들의 css 스타일 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_3\04_nextUntil_메소드.html" target="_blank">nextUntil() - 지정된 영역의 엘리먼트까지 css 스타일 변경(본인 불포함) </a></li>
+                        <li><a href="01_jQuery_basic\ex00_3\05_parent_메소드.html" target="_blank">parent() - 지정된 엘리먼트의 부모 엘리먼트 css 스타일 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_3\06_parents_메소드.html" target="_blank">parents() - 지정된 엘리먼트의 부모 엘리먼트들의 css 스타일 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex00_3\07_parentsUntil_메소드.html" target="_blank">parentsUntil() - 지정된 영역의 엘리먼트까지 css 스타일 변경(본인 불포함)</a></li>
+                        <li><a href="01_jQuery_basic\ex00_3\08_find_메소드.html" target="_blank">find() - 특정 엘리먼트 찾기</a></li>
+                        <li><a href="01_jQuery_basic\ex00_3\09_is_메소드.html" target="_blank">is() - 특정 엘리먼트 존재 여부 확인 </a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex00_all_images</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex00_all_images\test01.html" target="_blank">hide()를 이용하여 div 숨기기</a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex04</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex04\test01.html" target="_blank">show(), hide() </a></li>
+                        <li><a href="01_jQuery_basic\ex04\test02.html" target="_blank">width, height</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test03.html" target="_blank">fadeIn(), fadeOut()</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test04.html" target="_blank">slideDown(), slideUp</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test05.html" target="_blank">animate()</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test06.html" target="_blank">text(), html() - 텍스트 변환</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test07.html" target="_blank">empty() - 영역 비우기</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test08.html" target="_blank">attr() - 속성 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test09.html" target="_blank">val() - form default value값 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test10.html" target="_blank">addClass(), removeClass()</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test11.html" target="_blank">append()- A append B (A뒤에 B를)</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test12.html" target="_blank">appendTo() - A appendTo B (B뒤에 A를)</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test13.html" target="_blank">prepend() - A prepend B (A앞으로 B를)</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test14.html" target="_blank">prependTo() - A prependTo B (B앞으로 A를)</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test15.html" target="_blank">appendTo()- img넣기</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test16.html" target="_blank">remove()</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test17.html" target="_blank">click()해서 text()로 내용 넣기</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test18.html" target="_blank">mouseenter(), mouseleave()</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test19.html" target="_blank">hover()</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test20.html" target="_blank">focus(), blur()</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test21.html" target="_blank">click()해서 text()로 내용 넣기</a></li>
+                        <li><a href="01_jQuery_basic\ex04\test22.html" target="_blank">$(this)를 click()해서 text()로 내용 넣기</a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex05_rollover</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex05_rollover\index1.html" target="_blank">hover() - 탭 이미지 동적 생성 및 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex05_rollover\index2.html" target="_blank">mouseenter(), mouseleave() - 탭 이미지 동적 생성 및 변경</a></li>
+                        <li><a href="01_jQuery_basic\ex05_rollover\plugin_rollover.html" target="_blank">extend() - fn.name=function()플러그인 만들기 </a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex06_guidetext</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex06_guidetext\index1.html" target="_blank">form value 제어 </a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex07_accordion</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex07_accordion\index1.html" target="_blank">아코디언 메뉴 (each, find, hide, show, eq)</a></li>
+                        <li><a href="01_jQuery_basic\ex07_accordion\index2.html" target="_blank">아코디언 메뉴 (function()에 담아 사용하기)</a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex07_ajax</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex07_ajax\2\index.html" target="_blank">안배웠어요</a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex08_imgslider</p>
+                <div>
+                    <ol>
+                        <li><a href=".html" target="_blank"></a></li>
+                        <li><a href=".html" target="_blank"></a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex09_tabcontent</p>
+                <div>
+                    <ol>
+                        <li><a href=".html" target="_blank"></a></li>
+                        <li><a href=".html" target="_blank"></a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex10_animate</p>
+                <div>
+                    <ol>
+                        <li><a href="01_jQuery_basic\ex10_animate\animate1.html" target="_blank">animate() 를 이용해서 배너 만들기</a></li>
+                        <li><a href="01_jQuery_basic\ex10_animate\animate2.html" target="_blank">animate() 를 이용해서 다중 배너 만들기</a></li>
+                        <li><a href="01_jQuery_basic\ex10_animate\easing.html" target="_blank">easing 종류</a></li>
+                        <li><a href="01_jQuery_basic\ex10_animate\stop.html" target="_blank">stop() 종류</a></li>
 
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex10_tooltip</p>
-            <div>
-                <ol>
-                    <li><a href=".html" target="_blank"></a></li>
-                    <li><a href=".html" target="_blank"></a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex11_colorbox</p>
-            <div>
-                <ol>
-                    <li><a href=".html" target="_blank"></a></li>
-                    <li><a href=".html" target="_blank"></a></li>
-                </ol>
-            </div>
-        </article>
-        <article>
-            <p>ex12_rollover_fn</p>
-            <div>
-                <ol>
-                    <li><a href=".html" target="_blank"></a></li>
-                    <li><a href=".html" target="_blank"></a></li>
-                </ol>
-            </div>
-        </article>
-    </section>
-
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex10_tooltip</p>
+                <div>
+                    <ol>
+                        <li><a href=".html" target="_blank"></a></li>
+                        <li><a href=".html" target="_blank"></a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex11_colorbox</p>
+                <div>
+                    <ol>
+                        <li><a href=".html" target="_blank"></a></li>
+                        <li><a href=".html" target="_blank"></a></li>
+                    </ol>
+                </div>
+            </article>
+            <article>
+                <p>ex12_rollover_fn</p>
+                <div>
+                    <ol>
+                        <li><a href=".html" target="_blank"></a></li>
+                        <li><a href=".html" target="_blank"></a></li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+    </div>
+    <div id="middle">middle<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+    <div id="advance">advance<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
 </body>
 </html>

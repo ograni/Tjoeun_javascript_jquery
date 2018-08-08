@@ -9,7 +9,7 @@
             var n = current + 1;
             if(n >= visual.size()){n=0}
             button.eq(n).trigger('click')
-        },1000);
+        },10000);
     };
     $('#wrap').hover(
         function(){
