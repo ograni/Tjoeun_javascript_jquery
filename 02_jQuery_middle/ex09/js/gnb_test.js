@@ -1,3 +1,4 @@
+/*
 ﻿$(function(){
     //상단메뉴를 변수로 잡아주고
     var menu = $('#gnb > li');
@@ -36,6 +37,18 @@
     });
 
 });
-
+*/
 
 //이벤트 버블 칮이볼것
+
+
+$(function(){
+    var menu = $('#gnb > li');
+    var subMenu = menu.find('.sGnbArea');
+
+    menu.each(function(){
+        var selectMenu = $(this);
+
+    })
+
+});
